@@ -52,6 +52,7 @@ EUR
 Курсы берутся из Frankfurter с базовой валютой `USD`. Если валюты нет в данных сервиса, бот сообщит об этом.
 
 Для Vercel добавлен serverless entrypoint `api/index.js`. Он направляет публичный путь `/webhook/telegram` в Fastify endpoint.
+Rewrite для этого пути описан в `vercel.json`.
 
 ## Архитектура
 
