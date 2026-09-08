@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/fullstack.iml" filepath="$PROJECT_DIR$/.idea/fullstack.iml" />
+      <module fileurl="file://$USER_HOME$/tg-bot/.idea/tg-bot.iml" filepath="$USER_HOME$/tg-bot/.idea/tg-bot.iml" />
     </modules>
   </component>
 </project>
