@@ -1,0 +1,11 @@
+{
+  "name": "fullstack",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm --prefix 03 test"
+  },
+  "dependencies": {
+    "fastify": "^5.12.3"
+  }
+}
