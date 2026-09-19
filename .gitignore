@@ -1,4 +1,4 @@
 .idea
 node_modules/
-01/.env
-03/.env
+01-lesson/01/.env
+01-lesson/03/.env
