@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:apply": "supabase db query --linked --file sql/tables.sql",
+    "deploy:webhook": "supabase functions deploy webhook --no-verify-jwt",
+    "deploy:clients": "supabase functions deploy clients --no-verify-jwt",
+    "deploy:messages": "supabase functions deploy messages --no-verify-jwt",
+    "deploy:homework": "supabase functions deploy homework --no-verify-jwt",
+    "deploy:all": "npm run deploy:webhook && npm run deploy:clients && npm run deploy:messages",
+    "check": "deno check --config supabase/functions/webhook/deno.json supabase/functions/webhook/index.ts && deno check --config supabase/functions/clients/deno.json supabase/functions/clients/index.ts && deno check --config supabase/functions/messages/deno.json supabase/functions/messages/index.ts"
   },
   "author": "",
   "license": "ISC",
